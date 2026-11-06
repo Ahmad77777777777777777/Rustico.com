@@ -1,0 +1,141 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #d98654;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+button, a { color: inherit; font: inherit; }
+a { text-decoration: none; }
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(190, 75, 35, .63), rgba(191, 77, 34, .5) 48%, rgba(25, 16, 13, .7)),
+    url("https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=1400&q=65") center center / cover no-repeat;
+  filter: saturate(1.35) brightness(.74) contrast(1.08);
+  content: "";
+}
+
+.page { width: min(600px, calc(100% - 32px)); margin: 50px auto 35px; }
+.profile { position: relative; text-align: center; }
+.cover { position: relative; height: 200px; border-radius: 8px; }
+.cover > img { display: block; width: 100%; height: 100%; border-radius: inherit; object-fit: cover; object-position: center 51%; box-shadow: 0 4px 18px rgba(0,0,0,.2); }
+
+.avatar {
+  position: absolute;
+  z-index: 1;
+  bottom: -7px;
+  left: 8px;
+  display: flex;
+  width: 132px;
+  height: 132px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: #e7d8c3;
+  color: #392a20;
+  box-shadow: 0 3px 14px rgba(0,0,0,.27);
+}
+.avatar-logo { display: block; width: 68px; height: auto; margin-bottom: 5px; mix-blend-mode: multiply; }
+.avatar-name { margin-top: 0; font-family: Georgia, serif; font-size: 20px; letter-spacing: .05em; }
+.avatar-tag { margin-top: 2px; font-size: 6px; font-weight: 700; letter-spacing: .11em; }
+
+.profile-socials { display: flex; height: 58px; align-items: center; justify-content: center; gap: 34px; }
+.social-icon { display: grid; width: 30px; height: 30px; padding: 3px; place-items: center; border: 0; background: none; cursor: pointer; }
+.social-icon svg { width: 26px; height: 26px; fill: none; stroke: #fff; stroke-width: 1.8; }
+.social-icon .solid { fill: #fff; stroke: none; }
+.social-icon:hover { color: #ffdaae; transform: translateY(-2px); }
+
+h1 { margin: 16px 0 23px; font-size: 20px; font-weight: 700; letter-spacing: .01em; }
+.description { margin: 0 0 65px; font-size: 16px; font-weight: 500; line-height: 1.45; }
+
+.gallery { position: relative; }
+.gallery-frame { position: relative; height: 344px; overflow: hidden; border-radius: 8px; background: rgba(31, 24, 21, .5); box-shadow: 0 7px 25px rgba(0,0,0,.22); }
+.gallery-frame img { display: block; width: 100%; height: 100%; object-fit: cover; transition: opacity .2s ease; }
+.gallery-controls { position: absolute; z-index: 2; inset: 0; display: flex; align-items: center; justify-content: space-between; pointer-events: none; }
+.gallery-controls button { position: relative; width: 32px; height: 34px; overflow: hidden; border: 0; border-radius: 4px; background: rgba(20, 17, 16, .45); color: white; cursor: pointer; pointer-events: auto; font-size: 25px; line-height: 1; }
+.gallery-controls button:hover { background: rgba(20, 17, 16, .75); }
+
+.social-links { display: grid; gap: 10px; margin-top: 22px; }
+.social-link {
+  display: flex;
+  min-height: 47px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  background: rgba(25, 20, 18, .64);
+  box-shadow: 0 3px 12px rgba(0,0,0,.15);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background .16s ease, transform .16s ease;
+}
+.social-link:hover { transform: translateY(-2px); background: rgba(25,20,18,.82); }
+.link-icon { display: block; width: 27px; height: 27px; flex: 0 0 27px; }
+.whatsapp { fill: #25d366; }
+.whatsapp path:first-child { fill: #25d366; stroke: none; }
+.whatsapp path:last-child { fill: #fff; }
+.snapchat .snapchat-bg { fill: #ffeb00; }
+.snapchat .snapchat-ghost { fill: #fff; stroke: #111; stroke-width: 1.15; stroke-linejoin: round; }
+.instagram { fill: none; stroke: #e9a1d2; stroke-width: 2.2; }
+.instagram-dot { fill: #e9a1d2; stroke: none; }
+.tiktok { overflow: visible; }
+.tiktok-shadow { fill: #fe2c55; transform: translate(-1px, 1px); }
+.tiktok-main { fill: #25f4ee; }
+.facebook { fill: #1877f2; }
+
+.action-links { display: grid; gap: 10px; margin-top: 20px; }
+.action-link { display: flex; min-height: 51px; align-items: center; justify-content: center; position: relative; border: 1px solid rgba(255,255,255,.17); border-radius: 7px; background: rgba(25,20,18,.78); box-shadow: 0 3px 14px rgba(0,0,0,.18); font-size: 14px; font-weight: 700; }
+.action-link:hover { background: rgba(25,20,18,.94); }
+.action-symbol { position: absolute; right: 20px; color: rgba(255,255,255,.76); font-size: 20px; }
+
+.contact-card { margin-top: 22px; overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 8px; background: rgba(25,20,18,.82); text-align: left; }
+.contact-heading { display: flex; width: 100%; min-height: 52px; align-items: center; justify-content: space-between; padding: 0 19px; border: 0; background: transparent; color: #fff; cursor: pointer; font-size: 15px; font-weight: 600; }
+.chevron { font-size: 23px; }
+.contact-content { padding: 1px 19px 18px; }
+.contact-content[hidden] { display: none; }
+.contact-name { display: flex; align-items: center; gap: 13px; padding: 12px 0 16px; }
+.mini-logo { display: grid; width: 48px; height: 48px; flex: 0 0 48px; place-items: center; border-radius: 50%; background: #e7d8c3; color: #a65335; font-family: Georgia, serif; font-size: 31px; }
+.contact-name strong { display: block; margin-bottom: 4px; font-size: 14px; }
+.contact-name small { display: block; color: rgba(255,255,255,.8); font-size: 12px; line-height: 1.4; }
+.divider { height: 1px; background: rgba(255,255,255,.17); }
+.hours { display: flex; align-items: center; gap: 10px; margin: 14px 0; font-size: 12px; font-weight: 600; }
+.hours span { font-size: 21px; }
+.contact-shortcuts { display: flex; align-items: center; gap: 21px; }
+.contact-shortcuts a, .contact-shortcuts button { display: grid; width: 24px; height: 24px; padding: 0; place-items: center; border: 0; background: none; color: #fff; cursor: pointer; font-size: 20px; }
+.contact-shortcuts svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+.contact-shortcuts button { margin-left: auto; font-size: 13px; }
+.contact-shortcuts a:hover, .contact-shortcuts button:hover { color: #ffd2a8; }
+
+.toast { position: fixed; z-index: 5; right: 18px; bottom: 18px; padding: 12px 17px; border: 1px solid rgba(255,255,255,.15); border-radius: 8px; background: #211a17; color: #fff; font-size: 13px; opacity: 0; pointer-events: none; transform: translateY(8px); transition: opacity .18s ease, transform .18s ease; }
+.toast.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 600px) {
+  .page { width: calc(100% - 28px); margin-top: 22px; }
+  .cover { height: clamp(150px, 38vw, 200px); }
+  .avatar { left: 7px; bottom: -2px; width: clamp(110px, 31vw, 150px); height: clamp(110px, 31vw, 150px); }
+  .avatar-logo { width: clamp(58px, 18vw, 68px); }
+  .avatar-name { font-size: clamp(17px, 5vw, 23px); }
+  .avatar-tag { font-size: 6px; }
+  .profile-socials { height: 58px; gap: 30px; }
+  h1 { margin: 16px 0 20px; font-size: 20px; }
+  .description { margin-bottom: 48px; font-size: 15px; }
+  .gallery-frame { height: min(90vw, 344px); }
+  .social-link { min-height: 47px; font-size: 14px; }
+  .action-link { min-height: 51px; font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}

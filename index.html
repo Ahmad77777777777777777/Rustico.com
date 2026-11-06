@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#dd8954" />
+    <meta name="description" content="Rustico — good food, warm moments." />
+    <title>Rustico</title>
+    <link rel="icon" type="image/jpeg" href="rustico-logo.jpg" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="profile">
+        <div class="cover">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=65"
+            alt="Rustico restaurant"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <div class="avatar" aria-label="Rustico logo">
+            <img class="avatar-logo" src="rustico-logo.jpg" alt="Rustico logo" />
+            <span class="avatar-name">RUSTICO</span>
+            <span class="avatar-tag">KITCHEN &amp; RESTAURANT</span>
+          </div>
+        </div>
+
+        <div class="profile-socials" aria-label="Rustico social links">
+          <a class="social-icon" href="https://www.instagram.com/rusticocuisine?psln=MWtoeml3cG10cjZhOQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="solid" cx="18" cy="6" r="1"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.tiktok.com/@rstico216?_r=1&_t=ZS-9BBi9yCgFFc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.2a4.1 4.1 0 1 1-3.2-4V7a7.1 7.1 0 1 0 6.5 7.1V9.8a9 9 0 0 0 4 1V7.5c-3.1-.1-5.3-1.8-5.7-4.5H14Z"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.facebook.com/share/19odzyWCeY/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 21v-8.2H17l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H8v3.2h2.8V21h3.4Z"/></svg>
+          </a>
+          <button class="social-icon" id="share-button" type="button" aria-label="Share Rustico">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.7 6.6-4.4M8.7 13.3l6.6 4.4"/></svg>
+          </button>
+        </div>
+
+        <h1>Rustico</h1>
+        <p class="description">*Good food and warm moments at Rustico.</p>
+      </header>
+
+      <section class="gallery" id="menu" aria-label="Rustico photos">
+        <div class="gallery-frame">
+          <img
+            id="gallery-image"
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=65"
+            alt="Freshly prepared Rustico dishes"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="gallery-controls">
+            <button type="button" id="previous" aria-label="Previous photo">‹</button>
+            <button type="button" id="next" aria-label="Next photo">›</button>
+          </div>
+        </div>
+        <div class="social-links" id="links">
+          <a class="social-link" href="https://wa.me/201044977749" target="_blank" rel="noopener noreferrer">
+            <svg class="link-icon whatsapp" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M16 3.2A12.6 12.6 0 0 0 5.2 22.3L3.5 28l5.9-1.6A12.7 12.7 0 1 0 16 3.2Z" />
+              <path d="M12.1 9.8c-.3-.7-.7-.7-1-.7h-.8c-.3 0-.8.1-1.2.6-.4.4-1.6 1.5-1.6 3.7s1.6 4.3 1.8 4.6c.2.3 3.1 4.9 7.6 6.1 3.8 1 4.6-.5 5.4-1 .8-.6 1.3-1.9 1.4-2.6.1-.6.1-1.1-.1-1.2-.2-.2-.4-.3-.9-.5l-2.8-1.3c-.4-.2-.7-.2-1 .2-.3.4-1.1 1.3-1.4 1.6-.3.3-.5.3-.9.1a11.2 11.2 0 0 1-3.3-2.1 12.3 12.3 0 0 1-2.3-2.9c-.2-.4 0-.6.2-.8l.7-.8c.2-.3.3-.5.5-.8.1-.3.1-.6 0-.8l-1.3-3.2Z" />
+            </svg>
+            <span>My WhatsApp</span>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/rusticocuisine?psln=MWtoeml3cG10cjZhOQ==" target="_blank" rel="noopener noreferrer">
+            <svg class="link-icon instagram" viewBox="0 0 32 32" aria-hidden="true">
+              <rect x="4" y="4" width="24" height="24" rx="7" />
+              <circle cx="16" cy="16" r="5.5" />
+              <circle class="instagram-dot" cx="23.3" cy="8.9" r="1.6" />
+            </svg>
+            <span>My Instagram</span>
+          </a>
+          <a class="social-link" href="https://www.tiktok.com/@rstico216?_r=1&_t=ZS-9BBi9yCgFFc" target="_blank" rel="noopener noreferrer">
+            <svg class="link-icon tiktok" viewBox="0 0 32 32" aria-hidden="true">
+              <path class="tiktok-shadow" d="M18 3h5c.3 3.2 2 5.4 5 6.5v5.1a14 14 0 0 1-5-1.8v9.1a9 9 0 1 1-9-9h1v5.2h-1a3.8 3.8 0 1 0 3.8 3.8V3Z" />
+              <path class="tiktok-main" d="M16 3h5c.3 3.2 2 5.4 5 6.5v5.1a14 14 0 0 1-5-1.8v9.1a9 9 0 1 1-9-9h1v5.2h-1a3.8 3.8 0 1 0 3.8 3.8V3Z" />
+            </svg>
+            <span>My TikTok</span>
+          </a>
+          <a class="social-link" href="https://www.facebook.com/share/19odzyWCeY/" target="_blank" rel="noopener noreferrer">
+            <svg class="link-icon facebook" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M18.5 29V17.4h3.9l.6-4.5h-4.5V10c0-1.3.4-2.2 2.3-2.2h2.4V3.7c-.4-.1-1.9-.2-3.6-.2-3.6 0-6.1 2.2-6.1 6.3v3.1h-4.1v4.5h4.1V29h5Z" />
+            </svg>
+            <span>My Facebook</span>
+          </a>
+        </div>
+
+        <div class="action-links">
+          <a class="action-link" href="https://www.instamenuz.com/store_menu4?store_name=rustico" target="_blank" rel="noopener noreferrer">
+            <span>MENU</span>
+            <span class="action-symbol" aria-hidden="true">↗</span>
+          </a>
+          <a class="action-link" href="https://maps.app.goo.gl/vzHaEem1PPdTeUx48?g_st=aw" target="_blank" rel="noopener noreferrer">
+            <span>Rustico Location</span>
+            <span class="action-symbol" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </section>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </main>
+  </body>
+</html>
