@@ -88,7 +88,7 @@ h1 { margin: 16px 0 23px; font-size: 20px; font-weight: 700; letter-spacing: .01
 .whatsapp { fill: #25d366; }
 .whatsapp path:first-child { fill: #25d366; stroke: none; }
 .whatsapp path:last-child { fill: #fff; }
-.snapchat .snapchat-bg { fill: #ffeb00; }
+.snapchat .snapchat-bg { fill: #ffeb00; stroke: none; }
 .snapchat .snapchat-ghost { fill: #fff; stroke: #111; stroke-width: 1.15; stroke-linejoin: round; }
 .instagram { fill: none; stroke: #e9a1d2; stroke-width: 2.2; }
 .instagram-dot { fill: #e9a1d2; stroke: none; }
