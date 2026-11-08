@@ -54,6 +54,8 @@ body::before {
 .social-icon { display: grid; width: 30px; height: 30px; padding: 3px; place-items: center; border: 0; background: none; cursor: pointer; }
 .social-icon svg { width: 26px; height: 26px; fill: none; stroke: #fff; stroke-width: 1.8; }
 .social-icon .solid { fill: #fff; stroke: none; }
+.social-icon.talabat-icon { width: 36px; }
+.talabat-letter { display: flex; width: 29px; height: 29px; align-items: center; justify-content: center; padding: 0 0 2px 1px; border-radius: 50%; background: #ff5a00; color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-style: italic; font-weight: 700; line-height: 1; }
 .social-icon:hover { color: #ffdaae; transform: translateY(-2px); }
 
 h1 { margin: 16px 0 23px; font-size: 20px; font-weight: 700; letter-spacing: .01em; }
